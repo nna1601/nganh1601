@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=submit] {
+            background-color: rgb(37, 136, 103);
+            border: none;
+            color: aliceblue;
+        }
+        input[type=submit]:hover {
+            background-color: rgb(16, 90, 65);
+        }
+        fieldset {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="color"], input[type="radio"], input[type="gender"]  { 
+            padding: 5px;
+        margin-bottom: 10px;}
+
+
+    </style>
+</head>
+<body>
+    <fieldset>
+    <legend><b>Thông tin đăng ký</b></legend>
+    <form action=""; method="get"; target="_blank">
+            <!-- action: link mà thông tin được gửi vào -->
+        <label for="name">Tên của bạn</label> <br>
+        <input type="text"; name="name"; id="name"; placeholder="Nhập tên"; required>
+            <!-- for của label và id để trùng thì sẽ liên kết; name=...hiển thị trên link -->
+        <br>
+
+        <label for="sdt">Số điện thoại</label><br>
+        <input type="number" name="numberphone" id="sdt"; placeholder="Nhập số điện thoại"; required>
+        <br>
+
+        <label for="password">Mật khẩu</label><br>
+        <input type="password" name="password" id="password"; placeholder="Nhập mật khẩu"; required>
+        <br>
+
+        <label for="email">Email của bạn</label><br>
+        <input type="email" name="email" id="email"; placeholder="Nhập email"; required>
+        <br>
+
+        <label for="date">Ngày/Tháng/Năm sinh</label><br>
+        <input type="date" name="date" id="date" >
+        <br>
+
+        <label for="color">Màu yêu thích</label><br>
+        <input type="color" name="color" id="color">
+        <br>
+
+        <label for="gt">Giới tính</label><br>
+        <label><input type="radio" name="gender" id="">Nam</label>
+        <label><input type="radio" name="gender" id="">Nữ</label>
+        <label><input type="radio" name="gender" id="">Khác</label>
+            <!-- để trống name hoặc để khác nhau thì có thể chọn nhiều hơn 1 -->
+        <br>
+
+        <label for="chon">Sở thích</label><br>
+        <label><input type="checkbox" name="chon" id="">Móc len</label>
+        <label><input type="checkbox" name="chon" id="">Thể thao</label>
+        <label><input type="checkbox" name="chon" id="">Ngủ</label>
+        <br>
+
+        <label for="dd">Nơi sinh sống</label>
+        <select>
+            <option value="1" selected>Hà Nội</option>
+            <option value="2">TP HCM</option>
+            <option value="3">Phú Thọ</option>
+                <!-- value: số thứ tự; selected: mặc định; size="3" trong select: hiện full + thanh kéo -->
+        </select>
+        <br>
+
+        <label for="gtbt">Giới thiệu bản thân</label><br>
+        <textarea rows="3" cols="3"></textarea>
+
+        <br><br>
+        <button type="reset">Làm lại</button>
+        <!-- <button type="submit">Gửi</button> -->
+        <input type="submit" value="Gửi">
+    </form>
+</fieldset>
+</body>
+</html>

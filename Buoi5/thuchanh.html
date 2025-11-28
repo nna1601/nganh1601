@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            color: blue;
+            background-color: aquamarine;
+        }
+        fieldset {
+            width: 300px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="color"], input[type="radio"], input[type="gender"]  { 
+        margin-bottom: 10px;}
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action="">
+            <h3>ĐĂNG KÝ HỌC VIÊN</h3>
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name"><br>
+
+            <label for="date">Ngày sinh</label>
+            <input type="date" name="" id=""><br>
+
+            <label for="gender">Giới tính</label>
+            <label><input type="radio" name="gender">Nam</label>
+            <label><input type="radio" name="gender">Nữ</label><br>
+
+            <label for="dchi">Địa chỉ</label><br>
+            <textarea name="diachi" id="dchi"></textarea><br>
+
+            <label for="lop">Lớp</label>
+            <select>
+                <option value="">S1</option>
+                <option value="">S2</option>
+                <option value="">S3</option>
+                <option value="">S4</option>
+            </select><br>
+
+            <label for="email">Email</label>
+            <input type="email"><br>
+
+            <label for="sdt">Điện thoại</label>
+            <input type="number" name="sdt" id="sdt"><br>
+
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Làm lại</button>
+            
+
+
+        </form>
+    </fieldset>
+</body>
+</html>
